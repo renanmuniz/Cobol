@@ -62,12 +62,12 @@
       *----------------------------------------------------------------*
        0000-MAIN-PROCESS               SECTION.
       *----------------------------------------------------------------*
-           DISPLAY '*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*'.
-           DISPLAY '* ABNORMAL END  PROGRAM CALLED   *'.
+           DISPLAY '**********************************'.
+           DISPLAY '*  ABNORMAL END  PROGRAM CALLED  *'.
            DISPLAY '*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*'.
            DISPLAY '*DATE: 'WRK-ERROR-DATE'                *'.
            DISPLAY '*TIME: 'WRK-ERROR-TIME'                  *'.
-           DISPLAY '**********************************'.
+           DISPLAY '*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*'.
            DISPLAY '*CALLER PROGRAM.....:'WRK-PROGRAM'    *'.
            DISPLAY '*ERROR CODE:                     *'.
            DISPLAY '* 'WRK-ERROR-CODE' *'.
