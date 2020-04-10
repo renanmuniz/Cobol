@@ -1,0 +1,9 @@
+           03 CSTMRG01-CPF             PIC X(15).
+           03 CSTMRG01-NAME            PIC X(50).
+           03 CSTMRG01-BIRTH           PIC X(10).
+           03 CSTMRG01-STREET          PIC X(50).
+           03 CSTMRG01-NUMBER          PIC X(10).
+           03 CSTMRG01-OTHER-INFO      PIC X(15).
+           03 CSTMRG01-CITY            PIC X(40).
+           03 CSTMRG01-STATE           PIC X(02).
+           03 CSTMRG01-COUNTRY         PIC X(30).
