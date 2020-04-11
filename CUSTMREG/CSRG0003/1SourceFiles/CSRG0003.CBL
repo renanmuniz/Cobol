@@ -9,7 +9,7 @@
        REMARKS.
       *----------------------------------------------------------------*
       *                RENAN MUNIZ MERLO COBOL DEVELOPER               *
-      *                LINKEDIN.COM/IN/RENAN-MUNIZ-MERLO
+      *          https://www.linkedin.com/in/renan-muniz-merlo         *
       *----------------------------------------------------------------*
       *    PROGRAM-ID..: CSRG0003.                                     *
       *    ANALYST.....: RENAN MUNIZ MERLO                             *

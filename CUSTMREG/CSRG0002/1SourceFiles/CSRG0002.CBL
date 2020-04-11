@@ -9,7 +9,7 @@
        REMARKS.
       *----------------------------------------------------------------*
       *                RENAN MUNIZ MERLO COBOL DEVELOPER               *
-      *                LINKEDIN.COM/IN/RENAN-MUNIZ-MERLO
+      *          https://www.linkedin.com/in/renan-muniz-merlo         *
       *----------------------------------------------------------------*
       *    PROGRAM-ID..: CSRG0002.                                     *
       *    ANALYST.....: RENAN MUNIZ MERLO                             *
@@ -23,9 +23,9 @@
       *----------------------------------------------------------------*
       *    FILES.......:  DDNAME          LRECL       INCLUDE/BOOK     *
       *                   FILE0003        00222       CSTMRG01         *
-      *                   FILEERR2        00222       CSTMRG01         *
+      *                   FILEERR2        00015       CSTMRG01         *
       *----------------------------------------------------------------*
-      *    TABLE DB2...:  TB_CUSTOMER.                                 *
+      *    TABLE DB2...:  TB_CUSTOMER                 BTB_CUSTOMER     *
       *                                                                *
       *----------------------------------------------------------------*
       *                                                                *

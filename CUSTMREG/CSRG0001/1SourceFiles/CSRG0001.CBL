@@ -9,7 +9,7 @@
        REMARKS.
       *----------------------------------------------------------------*
       *                RENAN MUNIZ MERLO COBOL DEVELOPER               *
-      *                LINKEDIN.COM/IN/RENAN-MUNIZ-MERLO
+      *          https://www.linkedin.com/in/renan-muniz-merlo         *
       *----------------------------------------------------------------*
       *    PROGRAM-ID..: CSRG0001.                                     *
       *    ANALYST.....: RENAN MUNIZ MERLO                             *
@@ -22,10 +22,10 @@
       *                  TION.                                         *
       *----------------------------------------------------------------*
       *    FILES.......:  DDNAME          LRECL       INCLUDE/BOOK     *
-      *                   FILE0001        00015       FLBK0001         *
-      *                   FILE0002        00222       FLBK0002         *
-      *                   FILE0003        00222       FLBK0002         *
-      *                   FILEERR1        00015       FLBK0001         *
+      *                   FILE0001        00015       CSTMRG01         *
+      *                   FILE0002        00222       CSTMRG01         *
+      *                   FILE0003        00222       CSTMRG01         *
+      *                   FILEERR1        00015       CSTMRG01         *
       *----------------------------------------------------------------*
       *    TABLE DB2...:  NONE.                                        *
       *                                                                *
@@ -206,6 +206,7 @@
           03 MINUTE-COMPILED                     PIC X(02) VALUE SPACES.
           03 FILLER                              PIC X(01) VALUE '-'.
           03 SECOND-COMPILED                     PIC X(02) VALUE SPACES.
+
       *================================================================*
        PROCEDURE                       DIVISION.
       *================================================================*
@@ -255,10 +256,9 @@
            MOVE 'OPEN FILE FILEERR1'   TO WRK-ERROR-MSG.
            PERFORM 8400-TEST-FS-FILEERR1.
 
-           MOVE 'READ FILE FILE0001'   TO WRK-ERROR-MSG.
+
            PERFORM 2100-READ-FILE0001.
 
-           MOVE 'READ FILE FILE0002'   TO WRK-ERROR-MSG.
            PERFORM 2200-READ-FILE0002.
 
       *----------------------------------------------------------------*
@@ -374,6 +374,12 @@
       *----------------------------------------------------------------*
            MOVE 'RECORDING ERROR FILE'
                                        TO    WRK-ERROR-MSG.
+
+           IF WRK-FILEERR1-REGS-COUNTER  EQUAL ZEROS
+              MOVE 'NOT FOUND:'      TO FD-REG-FILEERR1
+              WRITE FD-REG-FILEERR1
+              PERFORM 8400-TEST-FS-FILEERR1
+           END-IF.
 
            MOVE  WRK-FILEERR1-REG      TO    FD-REG-FILEERR1.
 
