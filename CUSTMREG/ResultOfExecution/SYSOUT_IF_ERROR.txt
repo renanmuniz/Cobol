@@ -1,0 +1,16 @@
+SYSOUT IN CASE OF ERROR,
+THE ABEND PROGRAM IS CALLED:
+
+**********************************                                                                                       
+*  ABNORMAL END  PROGRAM CALLED  *                                                                                       
+*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*                                                                                       
+*DATE: 13-04-2020                *                                                                                       
+*TIME: 23:49:56                  *                                                                                       
+*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*                                                                                       
+*CALLER PROGRAM.....:CSRG0001    *                                                                                       
+*ERROR CODE:                     *                                                                                       
+* 9                              *                                                                                       
+*ERROR MESSAGE:                  *                                                                                       
+* OPEN FILE FILE0002             *                                                                                       
+**********************************                                                                                       
+
